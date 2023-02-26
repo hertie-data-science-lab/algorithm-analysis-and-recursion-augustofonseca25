@@ -21,7 +21,7 @@ def Tower_of_Hanoi(n_rings, origin, destination, aux): # Move the rings between 
     Then the function does the reverse path to repeat that movement, and so on. 
     '''
     # Attention to the parameters: the next line will move from origin to aux
-    Tower_of_Hanoi(n_rings-1, origin = origin, aux, destination)
+    Tower_of_Hanoi(n_rings-1, origin, aux, destination)
     #
     # Move the next ring from the origin to the destination
     print("Move ring", n_rings,  "from tower", origin, "to tower", destination, ".")
